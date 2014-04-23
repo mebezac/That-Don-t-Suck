@@ -1,0 +1,18 @@
+!!! 5
+%html(lang="en-US")
+  %head
+    %title That Don't Suck - Find Things That Don't Suck
+    %meta(charset="UTF-8")
+    %meta{content: "width=device-width", name: "viewport"}
+    = csrf_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = yield :head
+  %body
+    %header
+      -# = render 'shared/header'
+    %section.content.clearfix
+      -# = render 'shared/messages'
+      = yield
+    %footer
+      &copy 2013 MyFLiX
