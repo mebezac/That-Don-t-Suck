@@ -4,7 +4,7 @@
     %meta(charset="UTF-8")
     %meta{content: "width=device-width", name: "viewport"}
     = csrf_meta_tag
-    = stylesheet_link_tag "application"
+    = stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Lobster", "http://fonts.googleapis.com/css?family=Shadows+Into+Light","http://fonts.googleapis.com/css?family=Coming+Soon"
     = javascript_include_tag "application"
     = yield :head
   %body
@@ -16,4 +16,3 @@
 
     %footer
       = render 'shared/footer'
-      
