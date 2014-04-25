@@ -1,0 +1,42 @@
+= content_for :head do
+  %title Free Stock Photos That Don't Suck
+
+.jumbotron.tds-topic.topic-pattern-0
+  .container
+    %h1 
+      %span.tds-shadows Free Stock Photos 
+      That Don't Suck
+    %p 
+      Optional sub description of topic so people have a better idea what to look for.
+
+    .row
+      .col-lg-3
+        .panel.panel-default
+          .panel-heading Asked for By #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")}
+          .panel-body
+            %ul.list-group
+              %li.list-group-item
+                %span.badge 14
+                Suggestions
+              %li.list-group-item
+                %span.badge 2
+                Favorites
+              %li.list-group-item
+                %span.badge 5
+                Contributors
+.container
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h2
+          %span.badge.alert-success.tds-topic-badge 14 
+          #{link_to "Suggestion #1", "external_link", target: "blank"}
+        %button.btn.btn-success{type: "submit"} Vote Up
+        %button.btn.btn-danger{type: "submit"} Vote Down
+      .panel-body
+        %p Description from suggester about why they think this is a good suggestion.
+        %p
+          %button.btn.btn-default{"data-target" => "#suggestion_1_comments", "data-toggle" => "collapse", type: "button"} View Comments (4) &#187;
+          #suggestion_1_comments.collapse
+            = 4.times do
+              %p.tds-topic-suggestion-comment This is a comment from a person.
