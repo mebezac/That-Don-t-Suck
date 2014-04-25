@@ -31,12 +31,12 @@
               %a{href: "#"} Separated link
             %li
               %a{href: "#"} One more separated link
-      %form.navbar-form.navbar-right
+
+      %form.navbar-form.navbar-right{role: "search"}
         .form-group
-          %input.form-control{placeholder: "Email", type: "text"}
-        .form-group
-          %input.form-control{placeholder: "Password", type: "password"}
+          %input.form-control{placeholder: "Search", type: "text"}
         .form-group  
-        %button.btn.btn-success{type: "submit"} Sign in
+        %button.btn.btn-success{type: "submit"} Search
+        %a.btn.btn-info{href: "#sign_in"} Sign In
         %a.btn.btn-primary{href: "#register"} Register
     .navbar-collapse
