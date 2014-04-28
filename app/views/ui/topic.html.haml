@@ -1,7 +1,7 @@
 = content_for :head do
   %title Free Stock Photos That Don't Suck
 
-.jumbotron.tds-topic.topic-pattern-0
+.jumbotron.tds-topic.background-pattern-0
   .container
     %h1 
       %span.tds-shadows Free Stock Photos 
@@ -26,7 +26,8 @@
                 Contributors
 .container
   .row
-    .panel.panel-default
+  = 2.times do
+    .panel.panel-default#topic-name-number
       .panel-heading
         %h2
           %span.badge.alert-success.tds-topic-badge 14 

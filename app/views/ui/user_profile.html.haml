@@ -1,0 +1,44 @@
+= content_for :head do
+  %title Testy McTesterson's Profile
+
+.jumbotron.tds-profile.background-pattern-1
+  .container
+    %h1 Testy McTesterson
+    %p 
+      Optional Twitter-Esque self-description
+    %p
+      %span.label.label-primary Expert - 13,145 points
+
+
+.container
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h2 Recent Activity
+      .panel-body
+        %p
+          Suggested #{link_to "Unsucky Free Stock Photos", "external_link", target: "blank"} on #{link_to "Free Stock Photos", "topic/free-stock-photos"} - 04/27/2014 3:27 pm 
+          %span.badge.alert-success +4pts
+        %hr
+        %p
+          Commented : "This is my comment can't you see?" on #{link_to "Suggestion #12 on Free Stock Photos", "topic/free-stock-photos#topic-name-12"} - 04/27/2014 3:26 pm 
+          %span.badge.alert-success +2pts
+        %hr
+        %p
+          Voted Up #{link_to "Suggestion #12 on Free Stock Photos", "topic/free-stock-photos#topic-name-12"} - 04/27/2014 3:25 pm 
+          %span.badge.alert-success +1pts
+        %hr
+        %p
+          Voted Down #{link_to "Suggestion #13 on Free Stock Photos", "topic/free-stock-photos#topic-name-13"} - 04/27/2014 3:24 pm 
+          %span.badge.alert-success +1pts
+        %hr
+        %p
+          Received Up Vote on #{link_to "Suggestion #13", "topic/free-stock-photos#topic-name-13"} on #{link_to "Free Stock Photos", "topic/free-stock-photos"} - 04/27/2014 3:23 pm 
+          %span.badge.alert-success +1pts
+        %hr
+        %p
+          Received Down Vote on #{link_to "Suggestion #14", "topic/free-stock-photos#topic-name-13"} on #{link_to "Free Stock Photos", "topic/free-stock-photos"} - 04/27/2014 3:22 pm 
+          %span.badge.alert-danger -1pts
+        %hr     
+  
+

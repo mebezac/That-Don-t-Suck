@@ -1,0 +1,30 @@
+= content_for :head do
+  %title Notifications
+
+.jumbotron.tds-profile.background-pattern-1
+  .container
+    %h1 Notifications
+
+
+.container
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h2 
+      .panel-body
+        %p
+          #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")} Suggested #{link_to "Unsucky Free Stock Photos", "external_link", target: "blank"} on your topic : #{link_to "Free Stock Photos", "topic/free-stock-photos"} - 04/27/2014 3:27 pm 
+          %span.badge.alert-success +4pts
+        %hr
+        %p
+          #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")} Commented : "This is my comment can't you see?" on your suggestion : #{link_to "Suggestion #12 on Free Stock Photos", "topic/free-stock-photos#topic-name-12"} - 04/27/2014 3:26 pm 
+          %span.badge.alert-success +2pts
+        %hr
+        %p
+          #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")} Voted Up on your suggestion : #{link_to "Suggestion #12 on Free Stock Photos", "topic/free-stock-photos#topic-name-12"} - 04/27/2014 3:25 pm 
+          %span.badge.alert-success +1pts
+        %hr
+        %p
+          #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")} Voted Down on your suggestion #{link_to "Suggestion #13 on Free Stock Photos", "topic/free-stock-photos#topic-name-13"} - 04/27/2014 3:24 pm 
+          %span.badge.alert-danger -1pts
+        %hr
