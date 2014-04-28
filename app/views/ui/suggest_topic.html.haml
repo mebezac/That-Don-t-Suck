@@ -1,0 +1,27 @@
+= content_for :head do
+  %title Suggest Topic
+
+.container
+  %form.form-horizontal
+    %h2 Suggest Topic
+    .form-group
+      %label.col-sm-2.control-label{for: "title"} Topic Title
+      .col-sm-10
+        %input#title.form-control{placeholder: "'Free Stock Photos', 'Vegetarian Recipes', etc."}
+    .form-group
+      %label.col-sm-2.control-label{for: "description"} Description
+      .col-sm-10
+        %textarea#description.form-control{placeholder: "Describe what you are looking for", rows: "4", maxlength: "250"}
+    .form-group
+      %label.col-sm-2.control-label{for: "category"} Category
+      .col-sm-10
+        %select.form-control
+          %option Category 1
+          %option Category 2
+          %option Category 3
+          %option Category 4
+          %option Category 5
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        %button.btn.btn-default{type: "submit"} Suggest Topic
+
