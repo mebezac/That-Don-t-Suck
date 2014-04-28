@@ -30,7 +30,9 @@
       .panel-heading
         %h2
           %span.badge.alert-success.tds-topic-badge 14 
-          #{link_to "Suggestion #1", "external_link", target: "blank"}
+          #{link_to "Suggestion #1", "external_link", target: "blank"} 
+        %small #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")}
+        %br
         %button.btn.btn-success{type: "submit"} Vote Up
         %button.btn.btn-danger{type: "submit"} Vote Down
       .panel-body
@@ -39,4 +41,15 @@
           %button.btn.btn-default{"data-target" => "#suggestion_1_comments", "data-toggle" => "collapse", type: "button"} View Comments (4) &#187;
           #suggestion_1_comments.collapse
             = 4.times do
-              %p.tds-topic-suggestion-comment This is a comment from a person.
+              %p.tds-topic-suggestion-comment This is a comment from a person. 
+              %small - #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")} - 04/27/2014 - 3:37 pm
+              %hr
+
+            %form.form-horizontal
+              .form-group
+                .row
+                  .col-lg-3.tds-topic-comment
+                    %textarea.form-control{rows: "3"}
+              .form-group
+                %button.btn.btn-success.tds-topic-comment{type: "submit"} Comment
+
