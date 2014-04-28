@@ -1,0 +1,29 @@
+= content_for :head do
+  %title Top Topics
+
+.jumbotron.tds-profile.background-pattern-0
+  .container
+    %h1 Top Topics
+    %p The most active topics, all time.
+
+.container
+  .row
+    = 2.times do
+      .panel.panel-default#topic-name-number
+        .panel-heading
+          %h2
+            %span.badge.alert-success.tds-topic-badge 1
+            #{link_to "This Topic", "topic/this-topic"} 
+          %small #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")}
+        .panel-body
+          %p Description of topic entered by the author of the topic
+          %ul.list-group
+            %li.list-group-item
+              %span.badge 14
+              Suggestions
+            %li.list-group-item
+              %span.badge 2
+              Favorites
+            %li.list-group-item
+              %span.badge 5
+              Contributors

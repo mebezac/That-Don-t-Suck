@@ -1,0 +1,53 @@
+= content_for :head do
+  %title Leaderboard
+
+.jumbotron.tds-profile.background-pattern-1
+  .container
+    %h1 Leaderboard
+    %p Top Users All Time
+
+.container
+  .row
+    %table.table.table-striped.table-hover
+      %thead
+        %tr
+          %th #
+          %th User
+          %th Points
+          %th Member Since
+      %tbody
+        %tr.info
+          %td 1
+          %td #{link_to("Super Crazy Long Named Person", "#users/Super-Crazy-Long-Named-Person")}
+          %td 55,1234
+          %td 04/23/2013 (368 days)
+        %tr.success
+          %td 2
+          %td Column content
+          %td Column content
+          %td Column content
+        %tr.warning
+          %td 3
+          %td Column content
+          %td Column content
+          %td Column content
+        %tr
+          %td 4
+          %td Column content
+          %td Column content
+          %td Column content
+        %tr
+          %td 5
+          %td Column content
+          %td Column content
+          %td Column content
+        %tr
+          %td 6
+          %td Column content
+          %td Column content
+          %td Column content
+        %tr
+          %td 7
+          %td Column content
+          %td Column content
+          %td Column content

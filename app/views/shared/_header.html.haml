@@ -9,31 +9,30 @@
     .navbar-collapse.collapse
       %ul.nav.navbar-nav
         %li.active
-          %a{href: "#"} Home
+          %a{href: "home"} Home
         %li
-          %a{href: "#about"} About
+          %a{href: "about"} About
         %li
-          %a{href: "#contact"} Contact
+          %a{href: "top_topics"} Top Topics
+        %li
+          %a{href: "leaderboard"} Leaderboard 
         %li.dropdown
           %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-            Dropdown
+            Me
             %b.caret
           %ul.dropdown-menu
             %li
-              %a{href: "#"} Action
+              %a{href: "/users/this-guy"} My Profile
             %li
-              %a{href: "#"} Another action
+              %a{href: "/users/this-guy/edit"} Edit Profile
             %li
-              %a{href: "#"} Something else here
+              %a{href: "settings"} Settings
             %li.divider
-            %li.dropdown-header Nav header
             %li
-              %a{href: "#"} Separated link
-            %li
-              %a{href: "#"} One more separated link
+              %a{href: "sign_out"} Sign Out
+
           %li
-            %a{href: "notifications"} 
-              Notifications 
+            %a{href: "notifications", title: "Notifications"} 
               %span.badge.alert-success 14 
 
       %form.navbar-form.navbar-right{role: "search"}
